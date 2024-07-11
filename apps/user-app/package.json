@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@repo/ui": "*",
+    "@repo/db": "*",
     "bcrypt": "^5.1.1",
     "next": "15.0.0-rc.0",
     "next-auth": "^4.24.7",
