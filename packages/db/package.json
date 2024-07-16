@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^5.16.2"
+    "@prisma/client": "^5.16.2",
+    "dotenv": "^16.4.5"
   },
   "exports": {
     "./client": "./index.ts"
