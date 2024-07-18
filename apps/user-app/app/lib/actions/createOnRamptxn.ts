@@ -1,7 +1,7 @@
 "use server"
 
 import { getServerSession } from "next-auth";
-import { authOptions } from "../lib/auth";
+import { authOptions } from "../auth";
 import prisma from "@repo/db/client";
 
 export async function createOnRampTransaction(amount:number,provider: string) {
@@ -10,7 +10,7 @@ export async function createOnRampTransaction(amount:number,provider: string) {
     const userId = session.user.id
     if(!userId) {
         return {
-            msg: "User no logged in"
+            msg: "User not logged in"
         }
     }
     await prisma.onRampTransaction.create({
