@@ -1,6 +1,6 @@
 import db from "@repo/db/client";
 import CredentialsProvider from "next-auth/providers/credentials"
-import bcrypt from "bcrypt";
+import bcryptjs from "bcryptjs"
 
 export const authOptions = {
     providers: [
@@ -12,7 +12,7 @@ export const authOptions = {
           },
 
           async authorize(credentials: any) {
-            const hashedPassword = await bcrypt.hash(credentials.password, 10);
+            const hashedPassword = await bcryptjs.hash(credentials.password, 10);
             const existingUser = await db.user.findFirst({
                 where: {
                     number: credentials.phone
@@ -20,7 +20,7 @@ export const authOptions = {
             });
 
             if (existingUser) {
-                const passwordValidation = await bcrypt.compare(credentials.password, existingUser.password);
+                const passwordValidation = await bcryptjs.compare(credentials.password, existingUser.password);
                 if (passwordValidation) {
                     return {
                         id: existingUser.id.toString(),

@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:mysecretpassword@localhost:5432/postgres"
+  url      = "postgres://avnadmin:AVNS_1UeEh0sfTYTlqcCdRCx@pg-316b10c2-ayushsrisks-45d8.g.aivencloud.com:27366/defaultdb?sslmode=require"
 }
 
 model User {
@@ -21,8 +21,8 @@ model User {
   password          String
   OnRampTransaction OnRampTransaction[]
   Balance           Balance[]
-    sentTransfers     p2pTransfer[]      @relation(name: "FromUserRelation")
-  receivedTransfers p2pTransfer[]        @relation(name: "ToUserRelation")
+  sentTransfers     p2pTransfer[]      @relation(name: "FromUserRelation")
+  receivedTransfers p2pTransfer[]      @relation(name: "ToUserRelation")
 }
 
 model Merchant {
