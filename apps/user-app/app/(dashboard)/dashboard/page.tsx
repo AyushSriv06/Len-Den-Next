@@ -27,8 +27,8 @@ const getUser = async () => {
 const App: React.FC = async () => {
     
     const userName = await getUser();
-    const data = [65, 59, 80, 81, 56, 55, 40];
-    const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    const data = [65, 40, 20, 81, 56, 55, 40];
+    const labels = ['Thu Jul 18 2024', 'Sun Jul 21 2024', 'Sun Jul 21 2024', 'April', 'May', 'June', 'July'];
 
 
     return (
