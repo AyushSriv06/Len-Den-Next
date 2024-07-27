@@ -21,7 +21,8 @@
     "next-auth": "^4.24.7",
     "react": "19.0.0-rc-f994737d14-20240522",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "19.0.0-rc-f994737d14-20240522"
+    "react-dom": "19.0.0-rc-f994737d14-20240522",
+    "tw-elements-react": "^1.0.0-alpha-end"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
