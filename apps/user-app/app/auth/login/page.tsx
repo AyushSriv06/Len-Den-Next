@@ -27,6 +27,12 @@ const LoginPage = () => {
     <div className="min-h-screen bg-[#ebe6e6] text-gray-900 flex justify-center items-center">
       <div className="max-w-md w-full bg-white shadow sm:rounded-lg p-6">
         <div className="mt-8 flex flex-col items-center">
+        <div className="text-3xl pb-4 font-bold text-blue-600">
+                <span className="text-blue-800">Le</span>
+                <span className="text-blue-500">N-</span>
+                <span className="text-blue-800">de</span>
+                <span className="text-blue-500">N</span>
+            </div>
           <h1 className="text-2xl font-extrabold">Sign in</h1>
           <div className="w-full mt-6">
             <form onSubmit={handleSubmit} className="mx-auto max-w-xs">
