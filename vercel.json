@@ -4,6 +4,5 @@
   "devCommand": "cd ../.. && npx turbo run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": "apps/user-app/.next",
-  "rootDirectory": "apps/user-app"
+  "outputDirectory": ".next"
 } 
