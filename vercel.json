@@ -1,8 +1,9 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "buildCommand": "cd ../.. && npm install && npm run build",
+  "buildCommand": "npm install && npm run build",
   "devCommand": "cd ../.. && npx turbo run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": "apps/user-app/.next"
+  "outputDirectory": "apps/user-app/.next",
+  "rootDirectory": "apps/user-app"
 } 
