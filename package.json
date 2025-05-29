@@ -21,6 +21,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "next": "^15.3.2",
     "recoil": "^0.7.7"
   }
 }
